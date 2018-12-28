@@ -79,11 +79,26 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
   position: relative;
   width: 471px;
 }
-.search_butten{
+
+.search_button input[type=button]{
   display: block;
-  right: 0;
+  position: absolute;
+  height: 100%;
+  width: 50px;
+  height: 100%;
+  right: -50px;
+  top: 0;
+  background-color: #03cf5d; 
+  border: none;
+}
+.search_button > i{
   position: absolute;
   top: 0;
+  right: 0;
+  color: #fff ;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-right: -35px;
 
 }
 .search input[type=text], select {
@@ -120,6 +135,7 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
  display: flex;
  width: 1080px;
  margin: 0 auto;
+ font-family: "나눔스퀘어";
 }
 .navigation_left ul{
  display: flex;
@@ -201,44 +217,54 @@ address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
 .colum_right{
  float: right;
 }
-.login{
- display: flex;
- align-items: center;
- height: 120px;
+.account{
+  display: flex;
+  align-items: center;
+justify-content: space-around;
+   height: 120px;
  width: 330px;
- background: #fff;
+  background: #fff;
+
 }
-.id_box, .password_box{
- width: 148px;
- height: 32px;
- border-right: 0;
- background:#f9fafc;
+.login{
+  width: 270px;
 }
-.id_box{
- border-bottom: 0;
+.lg_text{
+  font-size: 12px;
+  color: #888;  
 }
-.login input[type=text], select {
+.lg_box{
+  text-align: center;
+}
+.lg_box > a {
+  display: inline-block;
   width: 100%;
-  padding: 5px 10px;
-  box-sizing: border-box;
+  margin: 7px 0;
+  padding: 10px 0;
+  font-family: "나눔스퀘어";
+  font-size: 15px;
+  font-weight: 700;
+/*  letter-spacing: .05em;
+*/  color: #fff;
+  background: #03cf5d;
 }
-input[type=button]{
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  width: 41px;
-  height: 41px;
-  cursor: pointer;
-  text-decoration: none;
-  background-size: 60%;
-  background-image: url(imgs/magnifier.png)  ;
-  background-position: center;
-  background-repeat: no-repeat;
-
-
+.lg_bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-input[type=submit]:hover {
-  background-color: #45a049;
+.lg_bottom_left{
+  display: flex;
+}
+.lg_bottom a{
+  font-size: 12px;
+  color: #555;
+}
+.lg_bottom a:hover{
+  text-decoration: underline;
+}
+.lg_bottom_left > li:nth-child(2){
+  margin-left: 10px;
 }
 .wrap_form{
  display: flex;
@@ -379,6 +405,7 @@ flex: 0.3;
 .wrap_panel_list ul{
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .wrap_panel_list ul li{
   position: relative;
