@@ -417,9 +417,15 @@ flex: 0.3;
   position: relative;
   padding: 21px 0 22px;
   width: 122px;
-  height: 24px;
+  height: 64px;
   border-right: 1px solid #dee3eb;
+  box-sizing: border-box;
 }
+.wrap_panel_list ul li:nth-child(6n+0){
+  width: 123px;
+  border-right: none;
+}
+
 .list_stroke {
   border-top: 1px solid #dee3eb;
   border-bottom:1px solid #dee3eb;
